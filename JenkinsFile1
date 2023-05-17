@@ -23,7 +23,7 @@ pipeline{
         stage('UnitTest'){
             agent {label 'win_slave'}
             steps{
-                git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
+                git 'https://github.com/mohithsm/DevOpsClassCodes.git'
                 sh 'mvn test'
             }
         }
@@ -34,7 +34,7 @@ pipeline{
             }
         }
         stage('Package'){
-            agent{label 'win_slave'}
+            agent any
             steps{
                 sh 'mvn package'
             }
