@@ -1,8 +1,6 @@
 pipeline{
 	agent any
-	tools{
-        maven 'akshatmaven'
-    }
+	
       stages{
            stage('Checkout'){
 	    
