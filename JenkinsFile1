@@ -5,7 +5,7 @@ pipeline{
         stage('Checkout on git'){
             agent any
             steps{
-                git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
+                git 'https://github.com/mohithsm/DevOpsClassCodes.git'
             }
         }
         stage('Compile'){
